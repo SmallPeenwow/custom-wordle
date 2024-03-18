@@ -3,9 +3,9 @@ import React from 'react';
 
 const Header = () => {
 	return (
-		<div className='flex flex-col gap-5 justify-center items-center w-[400px]'>
+		<div className='flex flex-col gap-5 justify-center items-center w-[450px]'>
 			<h1 className='text-5xl font-bold'>Custom Wordle</h1>
-			<div className='flex items-center justify-start gap-5 w-[inherit]'>
+			<div className='flex items-center justify-center gap-6 w-[inherit]'>
 				<Image
 					src='/icons/info.svg'
 					alt='information'
@@ -20,6 +20,14 @@ const Header = () => {
 				>
 					Make your own wordle
 				</button>
+				<Image
+					src='/icons/leader-board.svg'
+					alt='leader board'
+					width={40}
+					height={40}
+					tabIndex={1}
+					className='cursor-pointer'
+				/>
 			</div>
 		</div>
 	);
