@@ -12,7 +12,7 @@ const Header = () => {
 					width={40}
 					height={40}
 					tabIndex={1}
-					className='cursor-pointer'
+					className='cursor-pointer hover:scale-125 transition ease-in-out delay-150 duration-500'
 				/>
 				<button
 					className='text-[#4866a7] hover:underline focus:underline active:underline text-2xl bg-[#222425] p-3 rounded-xl shadow-md shadow-[#4866a7] font-semibold'
@@ -26,7 +26,7 @@ const Header = () => {
 					width={40}
 					height={40}
 					tabIndex={1}
-					className='cursor-pointer'
+					className='cursor-pointer hover:scale-125 transition ease-in-out delay-150	 duration-500'
 				/>
 			</div>
 		</div>
