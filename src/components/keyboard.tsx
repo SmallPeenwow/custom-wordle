@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import KeyboardButton from './keyboardButton';
 import * as Constants from '@/constants/constants';
 
@@ -8,8 +8,28 @@ const Keyboard = () => {
 	const OnClickAction = (e: React.MouseEvent<HTMLButtonElement>) => {
 		e.preventDefault();
 
-		console.log((e.target as HTMLInputElement).textContent);
+		console.log((e.target as HTMLInputElement).value);
 	};
+
+	useEffect(() => {
+		const handleKeyPress = (event: KeyboardEvent) => {
+			event.preventDefault();
+
+			const key = event.key;
+
+			if (Constants.KeyboardLetters.includes(key)) {
+				console.log(key + ' here');
+			}
+
+			// TODO: if Backspace or Delete should do something. When enter press should do something
+		};
+
+		window.addEventListener('keydown', handleKeyPress);
+
+		return () => {
+			window.removeEventListener('keydown', handleKeyPress);
+		};
+	}, []);
 
 	return (
 		<div className='flex justify-center items-center flex-col gap-2'>
