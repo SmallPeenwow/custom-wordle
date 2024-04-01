@@ -28,3 +28,9 @@ export const KeyboardLetters: string[] = [
 	'm',
 	'delete',
 ];
+
+export const ArrayPlaceholderOne: string[] = ['w', 'e', 'a', 'r', 'y'];
+
+export const ArrayPlaceholderTwo: string[] = ['p', 'i', 'l', 'o', 't'];
+
+export const ArrayPlaceholderThree: string[] = ['v', 'a', 'g', 'u', 'e'];
