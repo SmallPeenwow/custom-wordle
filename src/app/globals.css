@@ -26,6 +26,14 @@
 	@apply flex gap-[5px];
 }
 
+.popUpBackground {
+	@apply absolute h-full w-full bg-zinc-500/40 flex justify-center items-center text-[#d5d0c5] font-light;
+}
+
+.popUpChildContainer {
+	@apply relative flex items-center flex-col pt-5 pb-14 px-10 bg-[#191a1b] rounded-lg gap-4 z-10;
+}
+
 :root {
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;

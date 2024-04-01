@@ -9,8 +9,8 @@ interface IHowToPlay {
 
 const HowToPlay = ({ setDisplay }: IHowToPlay) => {
 	return (
-		<div className='absolute h-full w-full bg-zinc-500/40 flex justify-center items-center text-[#d5d0c5] font-light'>
-			<div className='relative flex items-center flex-col pt-5 pb-14 px-10 bg-[#191a1b] rounded-lg gap-4 z-10'>
+		<div className='popUpBackground'>
+			<div className='popUpChildContainer'>
 				<Image
 					src='/icons/x-circle.svg'
 					alt='information'
